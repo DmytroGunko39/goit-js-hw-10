@@ -30,6 +30,9 @@ document.querySelector('.form').addEventListener('submit', event => {
       message: 'You forgot important data',
       iconUrl: iconCaution,
       position: 'topRight',
+      close: false,
+      backgroundColor: '#ffa000',
+      messageColor: '#fff',
       timeout: 3000,
     });
     return;
