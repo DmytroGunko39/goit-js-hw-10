@@ -4,10 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snackbar</title>
-    <script type="module" crossorigin src="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/goit-js-hw-10/2-snackbar.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-Dov3POoy.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/2-snackbar-BEkhH_lo.css">
     <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/style-ClsEYhSN.css">
   </head>
   <body>
-    <a href="./index.html">Go back</a>
+    <a class="goback" href="./index.html">Go back</a>
+    <form class="form">
+      <label class="delayLabel">
+        Delay (ms)
+        <input class="user-input" type="number" name="delay" />
+      </label>
+
+      <fieldset class="fieldset-input">
+        <legend>State</legend>
+        <label>
+          <input type="radio" name="state" value="fulfilled" />
+          Fulfilled
+        </label>
+        <label>
+          <input type="radio" name="state" value="rejected" />
+          Rejected
+        </label>
+      </fieldset>
+
+      <button class="btn-submit" type="submit">Create notification</button>
+    </form>
   </body>
 </html>
